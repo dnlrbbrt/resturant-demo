@@ -413,27 +413,20 @@ blockquote {
 .delivery-link{
   color:var(--accent);
   font-weight:700;
-  font-size:1.1rem;
-  position:absolute;
-  right:1rem;
-  top:50%;
-  transform:translateY(-50%);
-  margin-left:0;
-  white-space:nowrap;
-  padding-left:0;
+  font-size:1.15rem;
+  display:inline-block;
+  margin-top:0.75rem;
+  text-align:center;
+  text-decoration:none;
+  white-space:normal;   /* allow wrapping on smaller screens */
 }
 @media(max-width:768px){
-  .header-inner{flex-wrap:wrap;}
   .delivery-link{
-    display:block;          /* show on mobile */
-    position:static;        /* stay in flow */
-    transform:none;
     font-size:1rem;
-    flex:0 0 100%;          /* occupy full row */
-    text-align:right;       /* align text to right */
-    margin:0.5rem 0 0;      /* space above */
-    padding:0 1rem;         /* side padding similar to header */
-    white-space:normal;
+    display:block;
+    margin:0.5rem auto 0;
+    padding:0 1rem;
+    text-align:center;
   }
 } 
 .menu-hero{
