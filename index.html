@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matsuyama Restaurant | Premium Sushi</title>
+  <meta name="description" content="Matsuyama Restaurant offers premium sushi in Lodi, Stockton, Discovery Bay, and Galt. Explore our menu and order online.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Schema.org markup for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Matsuyama Restaurant",
+    "servesCuisine": "Japanese",
+    "url": "https://matsuyama.com",
+    "telephone": "(209) 555-1234",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Cherry Ln",
+        "addressLocality": "Lodi",
+        "addressRegion": "CA",
+        "postalCode": "95240"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "456 Pacific Ave",
+        "addressLocality": "Stockton",
+        "addressRegion": "CA",
+        "postalCode": "95202"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "789 Marina Blvd",
+        "addressLocality": "Discovery Bay",
+        "addressRegion": "CA",
+        "postalCode": "94505"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "101 Oak St",
+        "addressLocality": "Galt",
+        "addressRegion": "CA",
+        "postalCode": "95632"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <h1 class="logo">Matsuyama</h1>
+    <a href="https://order.online/business/matsuyama-japanese-restaurant-129085" class="delivery-link" target="_blank" rel="noopener">&raquo;&raquo;&raquo; We offer delivery and pickup through DoorDash</a>
+    <nav class="main-nav">
+      <select id="locationSelect" aria-label="Choose location">
+        <option value="lodi">Lodi</option>
+        <option value="stockton">Stockton</option>
+        <option value="discovery_bay">Discovery Bay</option>
+        <option value="galt">Galt</option>
+      </select>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#allLocations">Locations/Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<main>
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content container">
+      <div class="bamboo-bar">
+        <img src="https://0201.nccdn.net/1_2/000/000/104/e88/bamboo.jpg" alt="Decorative bamboo" class="bamboo-img" />
+      </div>
+      <h2 class="dish-name">Matsuyama</h2>
+      <div class="hero-actions">
+        <a href="#menu" class="btn primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="food-slider">
+        <button class="slide-btn prev" aria-label="Previous">&#10094;</button>
+        <div class="slide-wrapper">
+          <img id="foodSlide" src="https://0201.nccdn.net/1_2/000/000/17e/130/sushi2-317x320.JN8wpsbLk.png" alt="Delicious sushi" />
+          <p id="foodCaption" class="slide-caption">Signature Matsuyama Roll</p>
+        </div>
+        <button class="slide-btn next" aria-label="Next">&#10095;</button>
+      </div>
+      <h2>Menu</h2>
+      <div class="location-select-menu">
+        <span class="location-label">Location:</span>
+        <select id="locationSelectInline" aria-label="Choose location">
+          <option value="lodi">Lodi</option>
+          <option value="stockton">Stockton</option>
+          <option value="discovery_bay">Discovery Bay</option>
+          <option value="galt">Galt</option>
+        </select>
+      </div>
+      <p id="menuNotice" class="menu-notice" style="display:none;"></p>
+      <div class="menu-filters">
+        <button data-filter="all" class="filter-btn active">All</button>
+        <button data-filter="appetizers" class="filter-btn">Appetizers</button>
+        <button data-filter="sushi_sashimi" class="filter-btn">Sushi & Sashimi</button>
+        <button data-filter="rolls" class="filter-btn">Rolls</button>
+        <button data-filter="bento" class="filter-btn">Bento</button>
+        <button data-filter="entrees" class="filter-btn">Entrees</button>
+      </div>
+      <div class="menu-grid">
+        <!-- Menu items will be dynamically inserted here by js/main.js -->
+      </div>
+      <div class="menu-notes">
+        <p>*Requesting same fish for sashimi will have an additional charge of 2.00</p>
+        <p>**Substitutions to all same fish for assorted, chef-selected entres: +$2.00</p>
+        <p>***Alterations will have additional charges: Soy wrap +1.00, Deep-fried whole roll +2.00, Add tobiko +2.00</p>
+      </div>
+    </div>
+  </section>
+  <section id="allLocations" class="all-locations container">
+    <h2>Our Locations</h2>
+    <div class="locations-grid">
+      <div class="loc-card">
+        <h3>Lodi</h3>
+        <p>235 Lakewood Mall<br/>Lodi, CA 95242</p>
+        <p class="phone"><a href="tel:+12093683888">(209) 368-3888</a></p>
+        <p class="hours">Tues-Sat 11 am-2:30 pm (Lunch) · 5 pm-9 pm (Dinner)<br/>Mon &amp; Sun CLOSED</p>
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=235%20Lakewood%20Mall%20Lodi%20CA%2095242&output=embed"></iframe>
+      </div>
+      <div class="loc-card">
+        <h3>Stockton</h3>
+        <p>4755 Quail Lakes Dr<br/>Stockton, CA 95207</p>
+        <p class="phone"><a href="tel:+12099520688">(209) 952-0688</a></p>
+        <p class="hours">Mon-Sat 11 am-2:30 pm (Lunch) · 5 pm-9 pm (Dinner)<br/>Sun CLOSED</p>
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=4755%20Quail%20Lakes%20Dr%20Stockton%20CA%2095207&output=embed"></iframe>
+      </div>
+      <div class="loc-card">
+        <h3>Discovery Bay</h3>
+        <p>14870 CA-4<br/>Discovery Bay, CA 94505</p>
+        <p class="phone"><a href="tel:+19255166298">(925) 516-6298</a></p>
+        <p class="hours">Tues-Sun 11:30 am-9 pm<br/>Mon CLOSED</p>
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=14870%20CA-4%20Discovery%20Bay%20CA%2094505&output=embed"></iframe>
+      </div>
+      <div class="loc-card">
+        <h3>Galt</h3>
+        <p>10420 Twin Cities Rd<br/>Galt, CA 95632</p>
+        <p class="phone"><a href="tel:+12092517652">(209) 251-7652</a></p>
+        <p class="hours">Mon, Wed-Sun 11:30 am-9 pm<br/>Tues CLOSED</p>
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=10420%20Twin%20Cities%20Rd%20Galt%20CA%2095632&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section removed per request -->
+</main>
+<nav class="bottom-nav">
+  <a href="#hero">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#allLocations">Locations/Contact</a>
+</nav>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">Matsuyama</div>
+    <nav class="footer-nav">
+      <a href="#menu">Menu</a>
+      <a href="#allLocations">Locations/Contact</a>
+    </nav>
+    <!-- Social links removed per request -->
+    <small>&copy; 2025 Matsuyama Restaurant. All rights reserved.</small>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html> 
