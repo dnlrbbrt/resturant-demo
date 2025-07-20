@@ -423,14 +423,17 @@ blockquote {
   padding-left:0;
 }
 @media(max-width:768px){
+  .header-inner{flex-wrap:wrap;}
   .delivery-link{
     display:block;          /* show on mobile */
-    position:static;        /* revert to normal flow */
-    transform:none;         /* reset transform */
-    font-size:0.95rem;      /* slightly smaller for small screens */
-    margin-left:auto;       /* push towards right */
-    padding:0;              /* reset padding */
-    white-space:normal;     /* allow wrapping if needed */
+    position:static;        /* stay in flow */
+    transform:none;
+    font-size:1rem;
+    flex:0 0 100%;          /* occupy full row */
+    text-align:right;       /* align text to right */
+    margin:0.5rem 0 0;      /* space above */
+    padding:0 1rem;         /* side padding similar to header */
+    white-space:normal;
   }
 } 
 .menu-hero{
